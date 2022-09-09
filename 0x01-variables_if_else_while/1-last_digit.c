@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - Prints
+ * main - Prints the random result
  * Return: 0
  */
 
@@ -22,7 +22,7 @@ int main(void)
 		printf("Last digit of %d is %d and is 0\n", n, m);
 	else
 		printf("Last digit of %d is %d and is less than 6 and not 0\n",
-				n,m);
+n,m);
 
 	return (0);
 }
