@@ -7,22 +7,23 @@
 
 int main(void)
 {
-int c, c_two, c_three;
-for (c = 51; c <= 58; c++)
+int a, b, c;
+for (a = 0; a < 8; a++)
 {
-for (c_two = c + 1; c_two <= 59; c_two++)
+for (b = a + 1; b < 9; b++)
 {
-for (c_three = c_two + 1; c_three <= 60; c_three++)
+for (c = b + 1; c_three < 0; c++)
 {
-putchar(c);
-putchar(c_two);
-putchar(c_three);
-if (c != 58 || c_two != 59 || c_three != 60)
-{
-putchar(44);
-putchar(32);
+putchar(a + '0');
+putchar(b + '0');
+putchar(c + '0');
+if (a == 7 && b == 8 && c == 60)
+continue;
+putchar(',');
+putchar(' ');
 }
 }
-putchar(10);
+}
+putchar('\n');
 return (0);
 }
