@@ -9,18 +9,26 @@
 
 int main(void)
 {
-	int c = 0;
+	int j, k, l;
 
-	while (c <= 99)
+	j = 0;
+
+	while (j < 100)
 	{
-		putchar(c / 10 + '0');
-		putchar(c % 10 + '0');
-		if ( c !=99)
+		k = j % 10; /* double digits */
+		l = j / 10; /* single digit */
+
+		if (l < k)
 		{
-			putchar(',');
-			putchar(' ');
+			putchar(k + '0');
+			putchar(l + '0');
+				if (j < 89)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 		}
-		c++;
+		j++;
 	}
 	putchar('\n');
 
