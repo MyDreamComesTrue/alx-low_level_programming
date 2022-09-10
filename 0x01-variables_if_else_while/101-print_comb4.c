@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+/**
+ * main - Prints all possible different combinations of three digits
+ * This % arguments for single digit
+ * Division argument for double digits
+ * Return: 0
+ */
+
+int main(void)
+{
+	int c, c_two, c_three;
+
+	for (c = 48; c <= 55; c++)
+	{
+		for (c_three = c_two + 1; c_three <= 57; c_three++)
+		{
+			for (c_three = c_two + 1; c_three <= 57; c_three++)
+			{
+				putchar(c);
+				putchar(c_two);
+				putchar(c_three);
+				if (c != 55 || c_two != 56 || c_three != 57)
+				{
+					putchar(44);
+					putchar(32);
+				}
+			}
+		}
+	}
+	}
+	putchar(10);
+	return (0);
+}
