@@ -9,26 +9,20 @@
 
 int main(void)
 {
-	int j, k, l;
+	int c, c_two;
 
-	j = 0;
-
-	while (j < 100)
+	for(c = 48; c <= 55; c++)
 	{
-		k = j % 10; /* double digits */
-		l = j / 10; /* single digit */
-
-		if (l < k)
+		for (c_two = c + 1; c_two <= 57; c_two++)
 		{
-			putchar(k + '0');
-			putchar(l + '0');
-				if (j < 89)
-				{
-					putchar(',');
-					putchar(' ');
-				}
+			putchar(c);
+			putchar(c_two);
+			if (c != 56 || c_two != 57)
+			{
+				putchar(44);
+				putchar(32);
+			}
 		}
-		j++;
 	}
 	putchar('\n');
 
