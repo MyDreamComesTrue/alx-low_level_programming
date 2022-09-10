@@ -11,7 +11,7 @@ int main(void)
 {
 	int c, c_two;
 
-	for (c = 48; c <= 55; c++)
+	for (c = 48; c <= 57; c++)
 	{
 		for (c_two = c + 1; c_two <= 57; c_two++)
 		{
@@ -25,6 +25,5 @@ int main(void)
 		}
 	}
 	putchar(10);
-
 	return (0);
 }
