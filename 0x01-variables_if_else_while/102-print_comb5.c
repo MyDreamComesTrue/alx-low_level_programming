@@ -18,7 +18,7 @@ int main(void)
 			putchar(32);
 			putchar('0' + c_two / 10);
 			putchar('0' + c_two % 10);
-			if (c / 10 != 9 || c % != 8)
+			if (c / 10 != 9 || c % 10 != 8)
 			{
 				putchar(44);
 				putchar(32);
