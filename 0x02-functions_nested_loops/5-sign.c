@@ -1,20 +1,26 @@
 #include "main.h"
 
 /**
- * _isalpha - checks for alphabetic character
+ * print_sign - main function
  *
- * @c: parameter to test
+ * @n: character to compare
  *
- * Return: 1 if true or 0 if false
+ * Return: 1 if positive, 0 if zero, -1 if negative
+ *
  */
 
-int _isalpha(int c)
+int print_sign(int n)
 {
-
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	if (n > 0)
 	{
+		_putchar('+');
 		return (1);
 	}
-	else
+	if (n == 0)
+	{
+		_putchar('0');
 		return (0);
+	}
+	_putchar('-');
+	return (-1);
 }
