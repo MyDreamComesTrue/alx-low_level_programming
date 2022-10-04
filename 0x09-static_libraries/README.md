@@ -1,2 +1,1 @@
-Let's see some concept about static libraries !
-Are you ready ?
+This project is mainly focus static libraries.
